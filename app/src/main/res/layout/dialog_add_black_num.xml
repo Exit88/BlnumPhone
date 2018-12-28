@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="140dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        android:hint="请输入拦截号码(固话：区号-号码)"
+        android:id="@+id/et_black_phone_num" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        android:hint="拦截类型：1.电话2.短息3.都拦截"
+        android:id="@+id/et_black_phone_code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:id="@+id/bt_sure"
+            android:background="@drawable/submit"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:id="@+id/bt_cancel"
+            android:background="@drawable/cancel"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

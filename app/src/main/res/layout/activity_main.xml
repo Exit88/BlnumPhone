@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/rb_phone"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/clip_p_phone"/>
+
+        <Button
+            android:id="@+id/rb_xinxi"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p_messges"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:cacheColorHint="#FFF" >
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="20sp"
+            android:background="#c0c0c0" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textSize="20sp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/main_deleteall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清空"
+            android:textSize="20sp"
+            android:background="#c0c0c0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/bottom"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/btn_messges"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/clip_messges" />
+
+        <Button
+            android:id="@+id/btn_blnum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blnum"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add"/>
+
+        <Button
+            android:id="@+id/btn_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/record"/>
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
